@@ -1,0 +1,25 @@
+.sponsors-section {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.sponsors-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.sponsors-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sponsors-image-container {
+  width: 100%;
+}
+
+.sponsors-image {
+  max-width: 100%;
+  height: auto;
+} 

@@ -1,0 +1,13 @@
+.color-patterns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.color-patterns img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+} 

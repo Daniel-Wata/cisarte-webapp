@@ -1,0 +1,61 @@
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar-white {
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.avesso-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  /* This ensures the image container doesn't collapse */
+  min-width: min-content;
+}
+
+.avesso-image {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  display: block;
+  /* Preserve image aspect ratio */
+  object-fit: contain;
+}
+
+/* Enable proper scrolling behavior */
+@media screen and (max-width: 1280px) {
+  .avesso-container {
+    overflow-x: auto;
+  }
+  
+  .image-wrapper {
+    min-width: 100%;
+  }
+}
+
+/* When zoomed in, ensure both scrollbars work */
+@media (min-width: 1281px) {
+  html, body {
+    overflow: auto;
+  }
+} 

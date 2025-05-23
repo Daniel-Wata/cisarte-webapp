@@ -1,0 +1,82 @@
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.atelie-base {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #3E3B3B;
+}
+
+.navbar-white {
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.atelie-background {
+  width: 100%;
+  background-color: white;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.atelie-content {
+  padding: 60px 50px;
+  max-width: 800px;
+  margin: 0;
+  text-align: left;
+}
+
+.atelie-title {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.atelie-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.white-separator {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+
+.atelie-images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+}
+
+.image-container {
+  width: 100%;
+  max-width: 1280px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.atelie-image {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  display: block;
+} 

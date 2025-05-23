@@ -1,0 +1,45 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-section {
+  /* No background color here */
+}
+
+.color-patterns-section {
+  /* No background color here */
+}
+
+.circular-nav-section {
+  /* No background color here */
+}
+
+.sponsors-section {
+  /* No background color here */
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  background-color: #3B3B3B;
+}
+
+/* Make the navbar section container white */
+.navbar-section .container {
+  background-color: white;
+}
+
+/* Make the sponsors section container white */
+.sponsors-section .container {
+  background-color: white;
+} 

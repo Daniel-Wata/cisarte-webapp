@@ -1,0 +1,49 @@
+.circular-nav-container {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #3E3B3B;
+}
+
+.circular-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.nav-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.nav-item-circle {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  transition: transform 0.3s ease;
+}
+
+.nav-item-circle:hover {
+  transform: scale(1.05);
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-item-title {
+  margin-top: 15px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+} 

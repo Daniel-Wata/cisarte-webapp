@@ -1,0 +1,94 @@
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nossa-historia-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nossa-historia-content {
+  padding: 50px;
+  color: #333;
+  max-width: 800px;
+  margin: 0;
+  text-align: left;
+}
+
+.historia-paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.historia-paragraph strong {
+  font-weight: 700;
+}
+
+/* New section styles */
+.section-missao,
+.section-valores,
+.section-objetivos {
+  margin-top: 60px;
+  position: relative;
+  text-align: left;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  width: 84px;
+  height: 84px;
+  margin-right: 20px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-list {
+  padding-left: 20px;
+  margin-top: 10px;
+  list-style-type: disc;
+}
+
+.section-list li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #333;
+} 

@@ -7,6 +7,8 @@ import AvessoIndustria from './pages/AvessoIndustria';
 import Produto from './pages/Produto';
 import KitCorporativo from './pages/KitCorporativo';
 import Cisarte from './pages/Cisarte';
+import Contact from './pages/Contact';
+import EmailSent from './pages/EmailSent';
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/produtos" element={<Produto />} />
           <Route path="/kit-corporativo" element={<KitCorporativo />} />
           <Route path="/cisarte" element={<Cisarte />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="/email-enviado" element={<EmailSent />} />
         </Routes>
       </div>
     </Router>

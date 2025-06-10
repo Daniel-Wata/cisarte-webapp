@@ -1,16 +1,16 @@
-// Back to Top Button Functionality
+// Função do botão de voltar ao topo
 document.addEventListener('DOMContentLoaded', function() {
-  // Create the back to top button
+  // cria o botão de voltar ao topo
   const backToTopBtn = document.createElement('button');
   backToTopBtn.innerHTML = '↑';
   backToTopBtn.className = 'back-to-top';
   backToTopBtn.setAttribute('aria-label', 'Voltar ao topo');
   backToTopBtn.setAttribute('title', 'Voltar ao topo');
   
-  // Add button to the page
+  // adiciona o botão ao corpo da página
   document.body.appendChild(backToTopBtn);
   
-  // Show/hide button based on scroll position
+  // mostra/esconde o botão com base na posição de rolagem
   window.addEventListener('scroll', function() {
     if (window.pageYOffset > 300) {
       backToTopBtn.classList.add('visible');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Smooth scroll to top when button is clicked
+  // rolagem suave para o topo quando o botão é clicado
   backToTopBtn.addEventListener('click', function() {
     window.scrollTo({
       top: 0,

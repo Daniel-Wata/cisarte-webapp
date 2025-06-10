@@ -7,11 +7,13 @@
   color: black;
   font-family: 'Arial', sans-serif;
   width: 100%;
+  position: relative;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-image {
@@ -22,14 +24,15 @@
 .nav-links {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
   background-color: #333;
   border-radius: 25px;
   padding: 3px 10px;
   max-width: 700px;
-  margin: 0 auto;
   gap: 20px;
   flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-item {
@@ -45,4 +48,13 @@
 
 .nav-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Consistent navbar section styling for all pages */
+.navbar-white {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 10;
 } 

@@ -12,25 +12,10 @@
   justify-content: center;
 }
 
-.navbar-section {
-  /* No background color here */
-}
-
-.color-patterns-section {
-  /* No background color here */
-}
-
-.circular-nav-section {
-  /* No background color here */
-}
-
-.sponsors-section {
-  /* No background color here */
-}
-
 .container {
   width: 100%;
   max-width: 1280px;
+  margin: 0 auto;
   background-color: #3B3B3B;
 }
 

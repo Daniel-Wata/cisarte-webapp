@@ -6,17 +6,17 @@
   min-height: 100vh;
 }
 
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .atelie-base {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   background-color: #3E3B3B;
-}
-
-.navbar-white {
-  width: 100%;
-  background-color: white;
-  z-index: 10;
 }
 
 .atelie-background {
@@ -63,13 +63,11 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
-
 }
 
 .image-container {
   width: 100%;
   max-width: 1280px;
-
   display: flex;
   justify-content: center;
 }

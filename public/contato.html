@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | RUAV3SSA</title>
+  <link rel="stylesheet" href="css/Navbar.css">
+  <link rel="stylesheet" href="css/Contact.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="navbar-white">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/images/home/logo.png" alt="RUAV3SSA Logo" class="logo-image" />
+            </a>
+          </div>
+          <div class="nav-links">
+            <a href="produtos.html" class="nav-item">Produtos</a>
+            <a href="kit-corporativo.html" class="nav-item">Kit Corporativo</a>
+            <a href="cisarte.html" class="nav-item">Cisarte</a>
+            <a href="contato.html" class="nav-item">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-content">
+        <h1 class="contact-title">Contato</h1>
+        <div id="formErrors" style="color: #e53935; margin-bottom: 16px;"></div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span class="label-row">Nome <span class="required-asterisk">*</span></span>
+            <input type="text" name="nome" required />
+          </label>
+          <label>
+            <span class="label-row">Email <span class="required-asterisk">*</span></span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span class="label-row">Telefone <span class="required-asterisk">*</span></span>
+            <input type="tel" name="telefone" placeholder="(11) 91234-5678" required />
+          </label>
+          <label>
+            <span class="label-row">Assunto <span class="required-asterisk">*</span></span>
+            <input type="text" name="assunto" required />
+          </label>
+          <label>
+            <span class="label-row">Mensagem <span class="required-asterisk">*</span></span>
+            <textarea name="mensagem" required></textarea>
+          </label>
+          <button type="submit" class="contact-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector('input[name="telefone"]').addEventListener('input', function(e) {
+  let x = e.target.value.replace(/\D/g, '').slice(0, 11);
+  if (x.length > 0) x = '(' + x;
+  if (x.length > 3) x = x.slice(0, 3) + ') ' + x.slice(3);
+  if (x.length > 10) x = x.slice(0, 10) + '-' + x.slice(10);
+  e.target.value = x;
+});
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var nome = this.elements['nome'].value.trim();
+      var email = this.elements['email'].value.trim();
+      var telefone = this.elements['telefone'].value.trim();
+      var assunto = this.elements['assunto'].value.trim();
+      var mensagem = this.elements['mensagem'].value.trim();
+      var errors = [];
+    
+      // Nome validation
+      if (nome.length < 2) {
+        errors.push('Por favor, preencha seu nome completo.');
+      }
+    
+      // Email validation
+      var emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!emailPattern.test(email)) {
+        errors.push('Por favor, insira um email válido.');
+      }
+    
+      // Telefone validation (Brazilian format)
+      var telPattern = /^\(\d{2}\) \d{5}-\d{4}$/;
+      if (!telPattern.test(telefone)) {
+        errors.push('Por favor, insira um telefone válido no formato (11) 91234-5678.');
+      }
+    
+      // Assunto validation
+      if (assunto.length < 2) {
+        errors.push('Por favor, preencha o assunto.');
+      }
+    
+      // Mensagem validation
+      if (mensagem.length < 5) {
+        errors.push('Por favor, escreva uma mensagem mais detalhada.');
+      }
+    
+      var errorDiv = document.getElementById('formErrors');
+      if (errors.length > 0) {
+        errorDiv.innerHTML = errors.join('<br>');
+        return;
+      } else {
+        errorDiv.innerHTML = '';
+      }
+    
+      alert(nome + ', Obrigado por entrar em contato! Recebemos sua mensagem e retornaremos assim que possível!');
+      this.reset();
+    });
+    
+    // Phone mask
+    document.querySelector('input[name="telefone"]').addEventListener('input', function(e) {
+      let x = e.target.value.replace(/\D/g, '').slice(0, 11);
+      if (x.length > 0) x = '(' + x;
+      if (x.length > 3) x = x.slice(0, 3) + ') ' + x.slice(3);
+      if (x.length > 10) x = x.slice(0, 10) + '-' + x.slice(10);
+      e.target.value = x;
+    });
+    </script>
+</body>
+</html> 
